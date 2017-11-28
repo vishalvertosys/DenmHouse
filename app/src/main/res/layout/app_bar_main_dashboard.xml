@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.vishalmahajan.denmhouse.Activity.MainDashboardActivity">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@drawable/upperback"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:weightSum="1"
+                >
+            <TextView
+                android:id="@+id/heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DENIM HOUSE"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_weight="0.9"
+                />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/relativeLayout"
+                    >
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="34dp"
+                    android:layout_height="34dp"
+                    android:src="@drawable/shoppingcartwhite"
+                    android:layout_marginRight="2dp"
+                    android:layout_gravity="end|center"
+                    />
+
+                    <TextView
+                        android:id="@+id/textCounter"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignTop="@+id/imageView"
+                        android:layout_alignRight="@+id/imageView"
+                        android:text="0"
+                        android:textColor="#FFF"
+                        android:textSize="8sp"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:background="@drawable/circular_button"/>
+
+                </RelativeLayout>
+            </LinearLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_main_dashboard" />
+
+   <!-- <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        app:srcCompat="@android:drawable/ic_dialog_email" />
+-->
+</android.support.design.widget.CoordinatorLayout>

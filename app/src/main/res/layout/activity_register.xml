@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_gravity="center"
+    >
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.vishalmahajan.denmhouse.Activity.LoginActivity"
+    android:orientation="vertical">
+    
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/upperback"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textSize="18sp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:text="REGISTRATION"
+            android:id="@+id/TVregistration" />
+    </LinearLayout>
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        >
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+
+        <ImageView
+            android:layout_marginTop="30dp"
+            android:layout_width="260dp"
+            android:layout_height="160dp"
+            android:src="@mipmap/denimjeans"
+            />
+
+        </FrameLayout>
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="240dp"
+            android:layout_height="20dp"
+            android:textSize="15sp"
+            android:text="First Name"
+            />
+
+
+        <EditText
+            android:id="@+id/firstName"
+            android:layout_width="240dp"
+            android:layout_height="35dp"
+            android:textSize="15sp"
+            android:maxLength="150"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="5dp"
+            android:background="@drawable/edbg"
+            android:inputType="textPersonName"
+            />
+
+
+
+        <TextView
+            android:layout_width="240dp"
+            android:layout_height="20dp"
+            android:textSize="15sp"
+            android:layout_marginTop="10dp"
+            android:text="Last Name"
+            />
+
+        <EditText
+            android:id="@+id/lastName"
+            android:layout_width="240dp"
+            android:layout_height="35dp"
+            android:textSize="15sp"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="5dp"
+            android:maxLength="150"
+            android:background="@drawable/edbg"
+            android:inputType="textPersonName"
+            />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="65dp"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center|center_horizontal"
+            android:indeterminateDrawable="@drawable/progress_bar"
+            android:visibility="gone">
+        </ProgressBar>
+
+        <TextView
+            android:layout_width="240dp"
+            android:layout_height="20dp"
+            android:textSize="15sp"
+            android:layout_marginTop="10dp"
+            android:text="Company Name"
+            />
+
+        <EditText
+            android:id="@+id/companyName"
+            android:layout_width="240dp"
+            android:layout_height="35dp"
+            android:textSize="15sp"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="5dp"
+            android:maxLength="150"
+            android:background="@drawable/edbg"
+            android:inputType="text"
+            />
+
+        <TextView
+            android:layout_width="240dp"
+            android:layout_height="20dp"
+            android:textSize="15sp"
+            android:layout_marginTop="10dp"
+            android:text="Email"
+            />
+
+        <EditText
+            android:id="@+id/etEmailRegister"
+            android:layout_width="240dp"
+            android:layout_height="35dp"
+            android:textSize="15sp"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:layout_marginTop="5dp"
+            android:maxLength="150"
+            android:paddingLeft="5dp"
+            android:background="@drawable/edbg"
+            android:inputType="textEmailAddress"
+            />
+
+        <TextView
+            android:layout_width="240dp"
+            android:layout_height="20dp"
+            android:textSize="15sp"
+            android:layout_marginTop="10dp"
+            android:text="Phone Number"
+            />
+
+        <EditText
+            android:id="@+id/phoneNumber"
+            android:layout_width="240dp"
+            android:layout_height="35dp"
+            android:textSize="15sp"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:layout_marginTop="5dp"
+            android:maxLength="12"
+            android:paddingLeft="5dp"
+            android:background="@drawable/edbg"
+            android:inputType="phone"
+            />
+
+        <TextView
+            android:layout_width="240dp"
+            android:layout_height="20dp"
+            android:textSize="15sp"
+            android:layout_marginTop="10dp"
+            android:text="Password"
+            />
+
+        <EditText
+            android:id="@+id/etPasswordRegister"
+            android:layout_width="240dp"
+            android:layout_height="35dp"
+            android:textSize="15sp"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:layout_marginTop="5dp"
+            android:maxLength="150"
+            android:paddingLeft="5dp"
+            android:background="@drawable/edbg"
+            android:inputType="textPassword"
+            />
+
+
+        <Button
+            android:layout_width="240dp"
+            android:layout_height="50dp"
+            android:text="register now"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="15sp"
+            android:background="#6687AF"
+            android:id="@+id/registerButton"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
+</ScrollView>
